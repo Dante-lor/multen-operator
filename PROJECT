@@ -10,4 +10,14 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: multen-operator
 repo: github.com/dante-lor/multen-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: dante-lor.github.io
+  group: multen
+  kind: Tenant
+  path: github.com/dante-lor/multen-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"

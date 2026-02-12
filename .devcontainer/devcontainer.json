@@ -24,7 +24,17 @@
 		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind"
 	],
 
-	"postAttachCommand": [ "sh", ".devcontainer/install-operator-sdk.sh"]
+	"postAttachCommand": [
+		"sh",
+		".devcontainer/install-operator-sdk.sh"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.makefile-tools"
+			]
+		}
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
