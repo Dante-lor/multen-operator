@@ -36,6 +36,12 @@ graph LR
   app --> db1
 ```
 
+```mermaid
+graph LR
+A --> B
+```
+
+
 ## How do I contribute? 
 
 If you want to contribute to this project, please fork the repository and create a pull request with your changes. I will review the pull request and merge it if it is appropriate. 
