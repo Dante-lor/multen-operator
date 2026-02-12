@@ -1,6 +1,6 @@
 # Multen Operator
 
-The Multen Operator is a Kubernetes operator which provides secure multi-tenant access to an application via an authentication provider and separated data storage. **Currently the only providers are Envoy Gateway + Keycloak for authentication and PGO for data storage**
+The Multen Operator is a Kubernetes operator which provides secure multi-tenant access to an application via an authentication provider and separated data storage. **Currently the only providers are Envoy Gateway + Zitadel for authentication and PGO for data storage**
 
 ## Why does this project exist?
 

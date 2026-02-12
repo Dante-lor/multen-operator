@@ -1,0 +1,14 @@
+site_name: Multen - Multi-Tenancy Operator
+site_url: https://dante-lor.github.io/multen
+theme:
+  name: material
+  features:
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
