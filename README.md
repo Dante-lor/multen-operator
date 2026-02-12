@@ -30,7 +30,8 @@ graph LR
   end
 
   req["Org1 User Request"] --> gw["Envoy Gateway"]
-  gw <-- Authentication --> kc
+  gw -- Authentication --> kc
+  kc -- Authentication --> gw
   gw --> app["app"]
   app --> db1
 ```
