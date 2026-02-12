@@ -15,7 +15,7 @@ The operator also watches `Product` objects - these are used to create Keycloak 
 Finally, the operator watches `ProductDatabase` objects - these are used to create database cluster objects in PGO with one database for each tenant - thereby providing separated data storage for each tenant. You can have multiple ProductDatabase objects for each product - allowing you to choose between monolithic and microservice architectures.
 
 ```mermaid
-    info
+  info
 ```
 
 ```mermaid
