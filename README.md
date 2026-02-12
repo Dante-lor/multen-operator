@@ -18,26 +18,6 @@ Finally, the operator watches `ProductDatabase` objects - these are used to crea
   info
 ```
 
-<!-- ```mermaid
-graph LR;
-    subgraph kc["Keycloak Realm"]
-        subgraph orgs["Organizations"]
-            org1["Org1"]
-            org2["Org2"]
-        end
-        client1["App Client"]
-    end
-    subgraph pg["Postgres Cluster"]
-        db1["Org1 DB"]
-        db2["Org2 DB"]
-    end
-
-    req["Org1 User Request"] --> gw["Envoy Gateway"]
-    gw <-- Authentication --> kc
-    app["app"] --> db1
-    gw --> app
-``` -->
-
 ## How do I contribute? 
 
 If you want to contribute to this project, please fork the repository and create a pull request with your changes. I will review the pull request and merge it if it is appropriate. 
