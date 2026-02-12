@@ -16,23 +16,23 @@ Finally, the operator watches `ProductDatabase` objects - these are used to crea
 
 ```mermaid
 graph LR
-    subgraph kc["Keycloak Realm"]
-        subgraph orgs["Organizations"]
-            org1["Org1"]
-            org2["Org2"]
-        end
-        client1["App Client"]
+  subgraph kc["Keycloak Realm"]
+    subgraph orgs["Organizations"]
+      org1["Org1"]
+      org2["Org2"]
     end
+    client1["App Client"]
+  end
 
-    subgraph pg["Postgres Cluster"]
-        db1["Org1 DB"]
-        db2["Org2 DB"]
-    end
+  subgraph pg["Postgres Cluster"]
+    db1["Org1 DB"]
+    db2["Org2 DB"]
+  end
 
-    req["Org1 User Request"] --> gw["Envoy Gateway"]
-    gw <-- Authentication --> kc
-    gw --> app["app"]
-    app --> db1
+  req["Org1 User Request"] --> gw["Envoy Gateway"]
+  gw <-- Authentication --> kc
+  gw --> app["app"]
+  app --> db1
 ```
 
 ## How do I contribute? 
