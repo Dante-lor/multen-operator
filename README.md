@@ -18,7 +18,7 @@ Finally, the operator watches `ProductDatabase` objects - these are used to crea
   info
 ```
 
-```mermaid
+<!-- ```mermaid
 graph LR;
     subgraph kc["Keycloak Realm"]
         subgraph orgs["Organizations"]
@@ -36,7 +36,7 @@ graph LR;
     gw <-- Authentication --> kc
     app["app"] --> db1
     gw --> app
-```
+``` -->
 
 ## How do I contribute? 
 
