@@ -16,11 +16,7 @@ Finally, the operator watches `ProductDatabase` objects - these are used to crea
 
 
 ```mermaid
----
-config:
-  layout: elk
----
-flowchart
+flowchart LR
  subgraph kc["Keycloak Realm"]
         subgraph orgs["Organizations"]
             org1["Org1"]
