@@ -16,7 +16,7 @@ Finally, the operator watches `ProductDatabase` objects - these are used to crea
 
 
 ```mermaid
-graph LR
+graph LR;
     subgraph kc["Keycloak Realm"]
         subgraph orgs["Organizations"]
             org1["Org1"]
