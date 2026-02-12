@@ -14,26 +14,8 @@ The operator also watches `Product` objects - these are used to create Keycloak 
 
 Finally, the operator watches `ProductDatabase` objects - these are used to create database cluster objects in PGO with one database for each tenant - thereby providing separated data storage for each tenant. You can have multiple ProductDatabase objects for each product - allowing you to choose between monolithic and microservice architectures.
 
+![system diagram](assets/system.svg)
 
-```mermaid
-graph LR;
-    subgraph kc["Keycloak Realm"]
-        subgraph orgs["Organizations"]
-            org1["Org1"]
-            org2["Org2"]
-        end
-        client1["App Client"]
-    end
-    subgraph pg["Postgres Cluster"]
-        db1["Org1 DB"]
-        db2["Org2 DB"]
-    end
-
-    req["Org1 User Request"] --> gw["Envoy Gateway"]
-    gw <-- Authentication --> kc
-    app["app"] --> db1
-    gw --> app
-```
 
 ## How do I contribute? 
 
