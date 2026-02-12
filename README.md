@@ -16,18 +16,19 @@ Finally, the operator watches `ProductDatabase` objects - these are used to crea
 
 
 ```mermaid
-flowchart LR
- subgraph kc["Keycloak Realm"]
+graph LR
+    subgraph kc["Keycloak Realm"]
         subgraph orgs["Organizations"]
             org1["Org1"]
             org2["Org2"]
         end
         client1["App Client"]
-  end
- subgraph pg["Postgres Cluster"]
+    end
+    subgraph pg["Postgres Cluster"]
         db1["Org1 DB"]
         db2["Org2 DB"]
-  end
+    end
+
     req["Org1 User Request"] --> gw["Envoy Gateway"]
     gw <-- Authentication --> kc
     app["app"] --> db1
